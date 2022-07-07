@@ -15,13 +15,26 @@ const isbn13 = '978-0132350884'
 
 // TODO: write code in this section to pass the tests. You will need to add new code
 // as well as modify some of the existing code
-
+book.category = 'Programming'
+console.log(book)
 // Set this to the book name
-const name = ''
+const name = book.name
+console.log(name)
 
+book.pages = 464
+console.log(book)
 // Set this to the isbn 10 value
-const isbn10 = ''
+const isbn10 = book.isbn["isbn10"]
+console.log(isbn10)
 
+book.isbn.isbn13 = '978-0132350884'
+console.log(book)
+
+delete book.isbn.asin
+console.log(book)
+
+delete book.dimensions
+console.log(book)
 // Do not edit this exported object
 module.exports = {
   name: name,
