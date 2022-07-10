@@ -73,7 +73,7 @@ if (STR_SEVEN.length !== (STR_SEVEN.length % 2 === 0)) {
 // STR_EIGHT if STR_EIGHT has an even number of characters
 const STR_EIGHT = 'Alex'
 
-let answerSeven
+let answerSeven = ''
 if (STR_EIGHT.length % 2 === 0) {
   answerSeven =
     STR_EIGHT[Math.floor(STR_EIGHT.length / 2) - 1] +
@@ -94,7 +94,7 @@ if (STR_EIGHT.length % 2 === 0) {
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
 const MONTH = 'October'
-// let answerEight
+let answerEight = ''
 
 if (MONTH === 'December' || MONTH === 'January' || MONTH === 'February') {
   answerEight = 'Winter'
