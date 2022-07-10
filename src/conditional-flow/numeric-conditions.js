@@ -6,7 +6,7 @@ const ARRAY_TWO = ['Hello', 'Conditions']
 // Use conditional statements to set answerOne to false if ARRAY_ONE is not empty
 // or true if it is empty
 
-let answerOne
+let answerOne = true
 if (ARRAY_ONE) {
   answerOne = true
 } else {
@@ -31,9 +31,11 @@ const NUM_TWO = 92827
 let answerThree
 
 if (NUM_ONE > NUM_TWO) {
-    let answerThree = true 
+  answerThree = true
+  console.log('check is answerThree is', answerThree)
 } else {
-    let answerThree = false
+  answerThree = false
+  console.log('check is answerThree is', answerThree)
 }
 
 

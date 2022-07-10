@@ -1,15 +1,23 @@
 // Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello'
 
-let answerOne
-
+let answerOne = true
+if (STR_ONE === 'Hello') {
+  answerOne = true
+  console.log('answerOne', answerOne)
+}
 
 
 
 // Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye'
 
-let answerTwo
+let answerTwo = true
+if (STR_TWO !== 'Hello') {
+  answerTwo = true
+  console.log('answerTwo', answerTwo)
+}
+
 
 
 
@@ -19,8 +27,13 @@ let answerTwo
 const STR_THREE = 'Hello'
 const STR_FOUR = 'Good'
 
-let answerThree
+let answerThree = true
 
+if (STR_THREE.length > STR_FOUR.length) {
+  answerThree = true
+  console.log('answerThree is', answerThree)
+
+}
 
 
 
@@ -48,8 +61,11 @@ let answerFive
 // if STR_SEVEN has an odd number of characters
 const STR_SEVEN = 'Kayla'
 
-let answerSix
-
+let answerSix = ''
+if (STR_SEVEN.length !== (STR_SEVEN.length % 2 === 0)) {
+  answerSix = STR_SEVEN[Math.floor(STR_SEVEN.length / 2)]
+  console.log('answerSix is', answerSix)
+}
 
 
 
@@ -58,9 +74,12 @@ let answerSix
 const STR_EIGHT = 'Alex'
 
 let answerSeven
-
-
-
+if (STR_EIGHT.length % 2 === 0) {
+  answerSeven =
+    STR_EIGHT[Math.floor(STR_EIGHT.length / 2) - 1] +
+    STR_EIGHT[Math.floor(STR_EIGHT.length / 2)]
+  console.log('answerSeven is', answerSeven)
+}
 
 // Set answerEight to the appropriate season based on what MONTH is set to
 //
@@ -74,10 +93,22 @@ let answerSeven
 // December to February: Winter
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
-const MONTH = 'January'
+const MONTH = 'October'
+// let answerEight
 
-let answerEight
-
+if (MONTH === 'December' || MONTH === 'January' || MONTH === 'February') {
+  answerEight = 'Winter'
+  console.log('Winter')
+} else if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
+  answerEight = 'Spring'
+  console.log('Spring')
+} else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
+  answerEight = 'Summer'
+  console.log('Summer')
+} else if (MONTH === 'September' || MONTH === 'October' || MONTH === 'November') {
+  answerEight = 'Autumn'
+  console.log('Autumn')
+}
 
 
 module.exports = {

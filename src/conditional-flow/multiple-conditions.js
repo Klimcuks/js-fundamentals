@@ -6,10 +6,11 @@ const NUM = 9
 // Use conditional statements to set the value of the answerOne variable
 // to be true if the NUM variable is more than or equal to the LOWER variable
 // AND is less than or equal to the UPPER variable
-let answerOne = true                                                            // NOT SURE ABOUT THIS ONE//
+let answerOne = true
 
 if (NUM >= LOWER && NUM <= UPPER) {
   answerOne = true
+  console.log('check is answerOne is', answerOne)
 }
 
 // ---- //
@@ -22,7 +23,7 @@ const STR = 'yoyo'
 // Set answerTwo to false if it's neither of those
 // Run the test after setting STR to 'Hello', then 'Goodbye', then any other value you like
 // to verify your code is correct
-let answerTwo
+let answerTwo = true
 
 if (STR === 'Hello' || STR === 'Goodbye') {
   answerTwo = true
