@@ -29,9 +29,15 @@ console.log(allTheNums(3, 8))
 // error, 10    | ERROR!!!!!!!!!!
 //
 // TODO: write code below
+function inputTransform(string, num) {
+  string = string.toUpperCase()
+  num = '!'.repeat(num)
+  return string + num
+}
+inputTransform('hello', 7)
 
 // change the exported value to be the name of the function you defined
 module.exports = {
   a: allTheNums, // change undefined to be the name of the function defined to create the range of numbers (the first todo)
-  b: undefined // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
+  b: inputTransform // change undefined to be the name of the function defined to return the string with exclamations (the second todo)
 }
